@@ -1,0 +1,4 @@
+module jq {
+    header "jq.h"
+    export *
+}
