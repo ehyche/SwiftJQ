@@ -11,17 +11,30 @@ import XCTest
 
 class SwiftJQTests: XCTestCase {
     
-    func testExample() {
-        let json = """
-        {"text": "This is the message text","num":4,"silly":false}
-        """
+    func testBasicTests() {
 
-        // Just pretty-print it
-        let jsonPP = json.jqFilter(".", sortKeys: true) ?? ""
+        let bundle = Bundle(for: type(of: self))
+        guard let path = bundle.path(forResource: "jq", ofType: "test") else {
+            XCTFail("Could not find path to test file.")
+            return
+        }
 
-        print("pretty-printed = \n\(jsonPP)")
+        var fileString = ""
+        do {
+            fileString = try String(contentsOfFile: path, encoding: .utf8)
+        } catch {
+            XCTFail("Could not open test file.")
+            return
+        }
 
-        XCTAssert(!jsonPP.isEmpty, "Expected non-empty pretty-printed string, but did not get it")
+        let fileLines = fileString.split(separator: "\n")
+        for i in 0..<fileLines.count {
+
+        }
+
+        print("file jq.test has \(fileLines.count) lines")
+
+        XCTAssertTrue(true, "Expected non-empty pretty-printed string, but did not get it")
     }
     
 }

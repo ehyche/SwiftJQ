@@ -45,6 +45,7 @@
 		FD1E6D691FCF05D2003AD65D /* linker.c in Sources */ = {isa = PBXBuildFile; fileRef = FD1E6D451FCF05D2003AD65D /* linker.c */; };
 		FD2AB35C1FCE5AB00075FB0E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2AB35B1FCE5AB00075FB0E /* String+Extensions.swift */; };
 		FD2AB35F1FCE5B030075FB0E /* jq.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FD2AB35E1FCE5B030075FB0E /* jq.xcconfig */; };
+		FD8C1A1F1FE2315600CC436E /* jq.test in Resources */ = {isa = PBXBuildFile; fileRef = FD8C1A1E1FE2315600CC436E /* jq.test */; };
 		FDCD493A1FCF17BE0065B414 /* JQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCD49391FCF17BE0065B414 /* JQ.swift */; };
 		FDF8BE9D1FCE585E004B6424 /* SwiftJQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF8BE931FCE585E004B6424 /* SwiftJQ.framework */; };
 		FDF8BEA21FCE585E004B6424 /* SwiftJQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8BEA11FCE585E004B6424 /* SwiftJQTests.swift */; };
@@ -100,6 +101,7 @@
 		FD1E6D451FCF05D2003AD65D /* linker.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linker.c; sourceTree = "<group>"; };
 		FD2AB35B1FCE5AB00075FB0E /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		FD2AB35E1FCE5B030075FB0E /* jq.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = jq.xcconfig; sourceTree = "<group>"; };
+		FD8C1A1E1FE2315600CC436E /* jq.test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = jq.test; path = SwiftJQ/jq/tests/jq.test; sourceTree = SOURCE_ROOT; };
 		FDCD49391FCF17BE0065B414 /* JQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JQ.swift; sourceTree = "<group>"; };
 		FDF8BE931FCE585E004B6424 /* SwiftJQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftJQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF8BE961FCE585E004B6424 /* SwiftJQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftJQ.h; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 		FDF8BEA01FCE585E004B6424 /* SwiftJQTests */ = {
 			isa = PBXGroup;
 			children = (
+				FD8C1A1E1FE2315600CC436E /* jq.test */,
 				FDF8BEA11FCE585E004B6424 /* SwiftJQTests.swift */,
 				FDF8BEA31FCE585E004B6424 /* Info.plist */,
 			);
@@ -356,6 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD8C1A1F1FE2315600CC436E /* jq.test in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
